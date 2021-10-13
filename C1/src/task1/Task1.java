@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class Task1 {
 
-	static List<Integer> Divions(int n) {
+	static List<Integer> divions(int n) {
 		List<Integer> listDiv = new ArrayList<>();
 		int maxD = (int) Math.sqrt(n);
 		for (int i = 1; i <= maxD; i++) {
@@ -44,10 +44,10 @@ public class Task1 {
 		System.out.println("Please enter the second number greater than zero and not equal to first number:");
 		int num2 = sc.nextInt();
 		System.out.println("The factors of " + num1 + " are: ");
-		List<Integer> l1 = Divions(num1);
+		List<Integer> l1 = divions(num1);
 		System.out.println(l1);
 		System.out.println("The factors of " + num2 + " are: ");
-		List<Integer> l2 = Divions(num2);
+		List<Integer> l2 = divions(num2);
 		System.out.println(l2);
 
 		l1.retainAll(l2);
