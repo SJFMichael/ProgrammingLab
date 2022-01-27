@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upc_fxcalculator.CalculatorFXController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="resultTF" alignment="TOP_LEFT" editable="false" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #003333; -fx-text-fill: white;" stylesheets="@txt.css" text="0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="DigifaceWide Regular" size="34.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="calculatingTF" alignment="CENTER" editable="false" prefHeight="100.0" prefWidth="400.0" stylesheets="@txt.css">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bell MT Bold" size="23.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="buttonCos" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="Cos">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonSin" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="Sin">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonTan" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="Tan">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonAC" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="AC">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="610.0" prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="1">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="2">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="3">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonSum" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="+">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="610.0" prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="4">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="5">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button6" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="6">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonSubtract" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="-">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="510.0" prefHeight="100.0" prefWidth="410.0">
+         <children>
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="7">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="8">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button9" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="9">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonMultiply" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="*">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="410.0" prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="buttonDot" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text=".">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button0" mnemonicParsing="false" onAction="#numbersButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonEqual" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="=">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonDivide" mnemonicParsing="false" onAction="#commandsButtonListener" prefHeight="90.0" prefWidth="90.0" stylesheets="@buttonGlass.css" text="/">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

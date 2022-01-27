@@ -1,0 +1,4 @@
+.text-field {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-background-insets: 0;
+}
